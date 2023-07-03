@@ -1,6 +1,8 @@
 import { displayNavbar } from "./navbar";
 import { displayFooter } from "./footer";
-import { displayContent } from "./content";
+import { router } from "./router";
+
+window.addEventListener("popstate", router);
 
 window.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#app").innerHTML = `
@@ -10,6 +12,6 @@ window.addEventListener("DOMContentLoaded", () => {
     `;
 
   displayNavbar();
-  displayContent();
   displayFooter();
+  router();
 });

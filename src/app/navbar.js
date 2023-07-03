@@ -1,3 +1,5 @@
+import { navigateTo } from "./router";
+
 const addEvents = () => {
   const themeToggleBtn = document.querySelector(".theme-toggle");
   const iconTheme = themeToggleBtn.querySelector(".icon-theme");
@@ -5,6 +7,14 @@ const addEvents = () => {
   const menuToggle = document.querySelector(".menu-toggle");
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
   const currentTheme = localStorage.getItem("theme");
+  const navigate = document.querySelectorAll(".navigate");
+
+  navigate.forEach((navlink) => {
+    navlink.addEventListener("click", (e) => {
+      e.preventDefault();
+      navigateTo(navlink.pathname);
+    });
+  });
 
   menuToggle.addEventListener("click", () => {
     const icon = menuToggle.getElementsByTagName("i")[0];
@@ -52,11 +62,11 @@ export const displayNavbar = () => {
     },
   ];
   let displayNavLinks = links.map((item) => {
-    return `<li><a href=${item.href}>${item.title}</a></li>`;
+    return `<li><a class="navigate" href=${item.href}>${item.title}</a></li>`;
   });
   displayNavLinks = displayNavLinks.join("");
   let displayDropDownLinks = links.map((item) => {
-    return `<a href=${item.href}>${item.title}</a>`;
+    return `<a class="navigate" href=${item.href}>${item.title}</a>`;
   });
   displayDropDownLinks = displayDropDownLinks.join("");
 
@@ -66,7 +76,7 @@ export const displayNavbar = () => {
         <button class="menu-toggle">
           <i class="icon-menu1"></i>
         </button>
-        <a class="home-logo-container" href="/">
+        <a class="home-logo-container navigate" href="/">
           <img src="/favicon.svg" alt="home logo" class="home-logo" />
         </a>
         <nav class="links">
