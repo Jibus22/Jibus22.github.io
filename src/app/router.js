@@ -1,4 +1,7 @@
 import Home from "./views/Home";
+import About from "./views/About";
+import Skillset from "./views/Skillset";
+import Projects from "./views/Projects";
 
 const pathToRegex = (path) =>
   new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
@@ -25,9 +28,9 @@ export const navigateTo = (url) => {
 export const router = async () => {
   const routes = [
     { path: "/", view: Home },
-    // { path: u("/posts"), view: Posts },
-    // { path: u("/posts/:id"), view: PostView },
-    // { path: u("/settings"), view: Settings },
+    { path: "/about", view: About },
+    { path: "/skillset", view: Skillset },
+    { path: "/projects", view: Projects },
   ];
 
   // Test each route for a potential match.
