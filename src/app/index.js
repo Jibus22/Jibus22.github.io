@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
     <div id="navbar"></div>
     <div id="content"></div>
     <div id="footer"></div>
-`;
+    `;
 
   displayNavbar();
   displayContent();

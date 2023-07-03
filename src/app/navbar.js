@@ -37,6 +37,29 @@ const addEvents = () => {
 };
 
 export const displayNavbar = () => {
+  const links = [
+    {
+      title: "About",
+      href: "/about",
+    },
+    {
+      title: "Skillset",
+      href: "/skillset",
+    },
+    {
+      title: "Projects",
+      href: "/projects",
+    },
+  ];
+  let displayNavLinks = links.map((item) => {
+    return `<li><a href=${item.href}>${item.title}</a></li>`;
+  });
+  displayNavLinks = displayNavLinks.join("");
+  let displayDropDownLinks = links.map((item) => {
+    return `<a href=${item.href}>${item.title}</a>`;
+  });
+  displayDropDownLinks = displayDropDownLinks.join("");
+
   const navBar = `
     <div class="nav-bar">
       <div class="nav-header">
@@ -48,15 +71,7 @@ export const displayNavbar = () => {
         </a>
         <nav class="links">
           <ul class="nav-links">
-            <li>
-              <a href="_">About</a>
-            </li>
-            <li>
-              <a href="_">Skillset</a>
-            </li>
-            <li>
-              <a href="_">Projects</a>
-            </li>
+            ${displayNavLinks}
           </ul>
         </nav>
         <button class="theme-toggle">
@@ -64,9 +79,7 @@ export const displayNavbar = () => {
         </button>
       </div>
       <nav class="drop-down-menu">
-        <a href="_">About</a>
-        <a href="_">Skillset</a>
-        <a href="_">Projects</a>
+        ${displayDropDownLinks}
       </nav>
     </div>
   `;
