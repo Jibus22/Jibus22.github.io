@@ -17,7 +17,7 @@ export default class extends AbstractView {
         displayKeywords = displayKeywords.join("");
 
         return `
-          <div class="about-card">
+          <div class="card-style about-card">
             <div class="about-card-prez">
               <h4>${item.subtitle}</h4>
               <h5>${item.subsubtitle}</h5>
