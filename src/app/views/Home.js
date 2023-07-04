@@ -77,11 +77,13 @@ export default class extends AbstractView {
     return `
     <div class="page-container">
       <div class="page-content">
-        <h1>${name}</h1>
-        ${displayPrez}
-        <ul class="social">
-          ${displaySocial}
-        </ul>
+        <div class="home">
+          <h1>${name}</h1>
+          ${displayPrez}
+          <ul class="social">
+            ${displaySocial}
+          </ul>
+        </div>
       </div>
     </div>
   `;

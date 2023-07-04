@@ -277,13 +277,8 @@ Homepage Styles
 }
 
 .page-content {
-  padding-top: 7em;
+  padding-top: calc(3rem + 7vh);
   padding-bottom: 4.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
 }
 
 .page-content h1 {
@@ -291,6 +286,14 @@ Homepage Styles
   color: #3c5af0;
   font-weight: 800;
   font-size: calc(2.85rem + 0.8vw);
+}
+
+.home {
+  padding-top: calc(5rem + 5vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .prez {
@@ -479,5 +482,11 @@ Media queries
 @media screen and (min-width: 701px) {
   .show-drop-down-menu {
     display: none;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .home {
+    padding-top: calc(0.2rem + 0.2vh);
   }
 }

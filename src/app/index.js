@@ -1,5 +1,4 @@
-import { displayNavbar } from "./navbar";
-import { displayFooter } from "./footer";
+import { displayFooter, displayNavbar } from "./structure";
 import { router } from "./router";
 
 // update the content of the route according to the navigator back/forward button
