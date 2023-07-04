@@ -49,16 +49,16 @@ const addEvents = () => {
 export const displayNavbar = () => {
   const links = [
     {
-      title: "About",
-      href: "/about",
+      title: "Projects",
+      href: "/projects",
     },
     {
       title: "Skillset",
       href: "/skillset",
     },
     {
-      title: "Projects",
-      href: "/projects",
+      title: "About",
+      href: "/about",
     },
   ];
   let displayNavLinks = links.map((item) => {
