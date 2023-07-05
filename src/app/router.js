@@ -21,8 +21,10 @@ const getParams = (match) => {
 };
 
 export const navigateTo = (url) => {
-  history.pushState(null, null, url);
-  router();
+  if (url !== location.pathname) {
+    history.pushState(null, null, url);
+    router();
+  }
 };
 
 export const router = async () => {

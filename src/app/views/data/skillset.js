@@ -169,8 +169,14 @@ export const skills = [
   },
   {
     icon: "icon-bar_chart",
-    title: "Protools",
+    title: "Avid protools",
     subtitle: "post-production",
+    category: ["audio"],
+  },
+  {
+    icon: "icon-bar_chart",
+    title: "Digidesign C24",
+    subtitle: "control surface",
     category: ["audio"],
   },
   {
