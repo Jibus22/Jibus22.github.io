@@ -7,16 +7,8 @@ export default class extends AbstractView {
     this.setTitle("Skills");
   }
 
-  addEvents() {
-    const filterButtons = document.querySelectorAll(".filter-btn");
-
-    filterButtons.forEach((btn) => {
-      console.log(btn);
-    });
-  }
-
-  async render(id) {
-    let displaySkills = skills.map((item) => {
+  async getSkills(data) {
+    let displaySkills = data.map((item) => {
       return `
         <div class="card-style skill-card">
           <div class="skill-icon">
@@ -29,16 +21,44 @@ export default class extends AbstractView {
         </div>
       `;
     });
-    displaySkills = displaySkills.join("");
+    return displaySkills.join("");
+  }
 
+  async addEvents() {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener("click", async (e) => {
+        const category = e.currentTarget.dataset.id;
+        let skillCategory;
+
+        if (category === "all") {
+          skillCategory = skills;
+        } else {
+          skillCategory = skills.filter((item) => {
+            if (item.category.includes(category)) {
+              return item;
+            }
+          });
+        }
+        document.querySelector(".skills-grid").innerHTML = await this.getSkills(
+          skillCategory
+        );
+      });
+    });
+  }
+
+  async render(id) {
     let displayButtons = filterButtons.map((item) => {
       return `
-        <button class="filter-btn">
+        <button class="filter-btn" data-id=${item.category}>
           <p><span class=${item.icon}></span> ${item.text}</p>
         </button>
       `;
     });
     displayButtons = displayButtons.join("");
+
+    let displaySkills = await this.getSkills(skills);
 
     const view = `
     <div class="page-container">
@@ -57,5 +77,7 @@ export default class extends AbstractView {
     </div>
   `;
     document.querySelector(id).innerHTML = view;
+
+    this.addEvents();
   }
 }

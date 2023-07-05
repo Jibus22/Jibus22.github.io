@@ -566,6 +566,14 @@ Media queries
     margin-left: 0px;
     margin-right: 0px;
   }
+
+  .skills-grid {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    max-width: 300px;
+    width: 80%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
 }
 
 @media screen and (min-width: 701px) {

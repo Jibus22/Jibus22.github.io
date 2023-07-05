@@ -69,31 +69,19 @@ export const skills = [
     icon: "devicon-git-plain",
     title: "Git",
     subtitle: "development",
-    category: ["programming", "tools & environment", "devops"],
+    category: ["programming", "tools_&_environment", "devops"],
   },
   {
     icon: "devicon-github-plain",
     title: "Github",
     subtitle: "development",
-    category: ["programming", "tools & environment", "devops"],
-  },
-  {
-    icon: "devicon-slack-plain",
-    title: "Slack",
-    subtitle: "development",
-    category: ["programming", "tools & environment", "devops"],
-  },
-  {
-    icon: "icon-code",
-    title: "Miro",
-    subtitle: "development",
-    category: ["programming", "tools & environment", "devops"],
+    category: ["programming", "tools_&_environment", "devops"],
   },
   {
     icon: "devicon-docker-plain",
     title: "Docker",
     subtitle: "development",
-    category: ["programming", "tools & environment", "devops"],
+    category: ["programming", "tools_&_environment", "devops"],
   },
   {
     icon: "devicon-kubernetes-plain",
@@ -123,13 +111,13 @@ export const skills = [
     icon: "icon-wrench",
     title: "Gdb",
     subtitle: "development",
-    category: ["programming", "tools & environment"],
+    category: ["programming", "tools_&_environment"],
   },
   {
-    icon: "icon-code",
+    icon: "icon-file-code-o",
     title: "Make",
     subtitle: "development",
-    category: ["programming", "tools & environment"],
+    category: ["programming", "tools_&_environment"],
   },
   {
     icon: "devicon-bash-plain",
@@ -141,7 +129,7 @@ export const skills = [
     icon: "devicon-linux-plain",
     title: "Linux",
     subtitle: "development",
-    category: ["programming", "tools & environment"],
+    category: ["programming", "tools_&_environment"],
   },
   {
     icon: "devicon-numpy-plain",
@@ -157,7 +145,7 @@ export const skills = [
   },
   {
     icon: "icon-stats-dots",
-    title: "matplotlib",
+    title: "Matplotlib",
     subtitle: "development",
     category: ["programming", "datascience"],
   },
@@ -165,7 +153,19 @@ export const skills = [
     icon: "devicon-vim-plain",
     title: "Vim",
     subtitle: "development",
-    category: ["programming", "tools & environment"],
+    category: ["programming", "tools_&_environment"],
+  },
+  {
+    icon: "devicon-slack-plain",
+    title: "Slack",
+    subtitle: "workflow",
+    category: ["programming", "tools_&_environment", "devops"],
+  },
+  {
+    icon: "icon-pencil",
+    title: "Miro",
+    subtitle: "workflow",
+    category: ["programming", "tools_&_environment", "devops"],
   },
   {
     icon: "icon-bar_chart",
@@ -197,33 +197,41 @@ export const filterButtons = [
   {
     icon: "icon-flash",
     text: "All",
+    category: "all",
   },
   {
     icon: "icon-code",
     text: "Programming",
+    category: "programming",
   },
   {
     icon: "icon-gear",
     text: "System",
+    category: "system",
   },
   {
     icon: "icon-globe",
     text: "Web",
+    category: "web",
   },
   {
     icon: "icon-cloud",
     text: "Devops",
+    category: "devops",
   },
   {
     icon: "icon-pie-chart",
     text: "Datascience",
+    category: "datascience",
   },
   {
     icon: "icon-stack",
     text: "Tools & environment",
+    category: "tools_&_environment",
   },
   {
     icon: "icon-bar_chart",
     text: "Audio",
+    category: "audio",
   },
 ];
