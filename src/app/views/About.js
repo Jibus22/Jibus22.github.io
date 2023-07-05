@@ -7,7 +7,7 @@ export default class extends AbstractView {
     this.setTitle("About");
   }
 
-  async getHtml() {
+  async render(id) {
     let displayAbout = about.map((item) => {
       const cards = item.cards;
       let diplayCards = cards.map((item) => {
@@ -43,7 +43,7 @@ export default class extends AbstractView {
     });
     displayAbout = displayAbout.join("");
 
-    return `
+    const view = `
     <div class="page-container">
       <div class="page-content">
         <div class="about">
@@ -52,5 +52,6 @@ export default class extends AbstractView {
       </div>
     </div>
   `;
+    document.querySelector(id).innerHTML = view;
   }
 }

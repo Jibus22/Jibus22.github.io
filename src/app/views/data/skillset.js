@@ -204,23 +204,23 @@ export const filterButtons = [
   },
   {
     icon: "icon-gear",
-    text: "system",
+    text: "System",
   },
   {
     icon: "icon-globe",
-    text: "web",
+    text: "Web",
   },
   {
     icon: "icon-cloud",
-    text: "devops",
+    text: "Devops",
   },
   {
     icon: "icon-pie-chart",
-    text: "datascience",
+    text: "Datascience",
   },
   {
     icon: "icon-stack",
-    text: "tools & environment",
+    text: "Tools & environment",
   },
   {
     icon: "icon-bar_chart",

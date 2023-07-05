@@ -7,7 +7,15 @@ export default class extends AbstractView {
     this.setTitle("Skills");
   }
 
-  async getHtml() {
+  addEvents() {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+
+    filterButtons.forEach((btn) => {
+      console.log(btn);
+    });
+  }
+
+  async render(id) {
     let displaySkills = skills.map((item) => {
       return `
         <div class="card-style skill-card">
@@ -32,7 +40,7 @@ export default class extends AbstractView {
     });
     displayButtons = displayButtons.join("");
 
-    return `
+    const view = `
     <div class="page-container">
       <div class="page-content">
         <div class="skillset">
@@ -48,5 +56,6 @@ export default class extends AbstractView {
       </div>
     </div>
   `;
+    document.querySelector(id).innerHTML = view;
   }
 }

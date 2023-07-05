@@ -7,7 +7,7 @@ export default class extends AbstractView {
     this.setTitle("Home");
   }
 
-  async getHtml() {
+  async render(id) {
     let displayPrez = prez.map((item) => {
       return `
         <div class="prez">
@@ -33,7 +33,7 @@ export default class extends AbstractView {
     });
     displaySocial = displaySocial.join("");
 
-    return `
+    const view = `
     <div class="page-container">
       <div class="page-content">
         <div class="home">
@@ -46,5 +46,6 @@ export default class extends AbstractView {
       </div>
     </div>
   `;
+    document.querySelector(id).innerHTML = view;
   }
 }

@@ -7,7 +7,5 @@ export default class {
     document.title = `${title} • Jean-Baptiste LC`;
   }
 
-  async getHtml() {
-    return "";
-  }
+  async render(id) {}
 }

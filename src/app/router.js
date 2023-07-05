@@ -54,5 +54,5 @@ export const router = async () => {
 
   const view = new match.route.view(getParams(match));
 
-  document.querySelector("#content").innerHTML = await view.getHtml();
+  await view.render("#content");
 };
