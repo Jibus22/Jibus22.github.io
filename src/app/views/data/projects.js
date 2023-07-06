@@ -72,7 +72,7 @@ export const projects = [
   },
   {
     href: "https://github.com/Jibus22/malloc",
-    img: "/images/galaxy3.jpg",
+    img: "src/public/images/galaxy3.jpg",
     title: "malloc",
     prez: "implementation of malloc with mmap()",
     keywords: ["C", "unix", "system", "mmap"],
@@ -104,7 +104,7 @@ export const projects = [
   },
   {
     href: "https://github.com/Jibus22/ft_transcendence",
-    img: "/images/ft_transcendance.jpg",
+    img: "src/public/images/ft_transcendance.jpg",
     title: "ft_transcendence",
     prez: "Web application of an online pong game with leaderboard, profile dashboard, chat interface. Implemented part of back-end, all websocket system and front-end in the end. Built and deployed with docker-compose",
     keywords: [
@@ -121,7 +121,7 @@ export const projects = [
   },
   {
     href: "https://github.com/Jibus22/ft_services",
-    img: "/images/galaxy2.jpg",
+    img: "src/public/images/galaxy2.jpg",
     title: "ft_services",
     prez: "Deploy a microservices infrastructure with k8s, with a script. Services are: a nginx server and reverse proxy, wordpress, phpmyadmin, mariadb, ftp server, grafana monitoring dashboard, influxdb. All docker images are hand-made from an alpine OS",
     keywords: ["kubernetes", "docker", "bash", "minikube", "alpine"],

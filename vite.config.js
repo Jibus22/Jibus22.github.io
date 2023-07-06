@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: "../public",
   },
-  root: "src",
+  // root: "src",
 });
