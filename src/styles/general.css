@@ -16,6 +16,7 @@ Variables
   --radius-3: 0.4rem;
   --radius-4: 2rem;
   --shadow-3: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-4: 0 0 0 3px rgba(66, 153, 225, 0.6);
   --space-1: 1.5rem;
 }
 
@@ -434,6 +435,22 @@ Shared
   font-size: calc(0.65rem + 0.1vw);
 }
 
+.filter-btn {
+  border-radius: var(--radius-4);
+  background: var(--bg-5);
+  cursor: pointer;
+  padding: 0.4em 0.8em;
+  color: var(--fg-3);
+  border-color: transparent;
+  font-weight: 500;
+  font-size: calc(0.7rem + 0.3vw);
+  margin: 0.2rem 0.2rem;
+}
+
+.filter-btn:focus {
+  box-shadow: var(--shadow-4);
+}
+
 /*
 ===============
 About page Styles
@@ -513,18 +530,6 @@ Skillset page Styles
   margin: 2.5rem 1rem;
 }
 
-.filter-btn {
-  border-radius: var(--radius-4);
-  background: var(--bg-5);
-  cursor: pointer;
-  padding: 0.4em 0.8em;
-  color: var(--fg-3);
-  border-color: transparent;
-  font-weight: 500;
-  font-size: calc(0.7rem + 0.3vw);
-  margin: 0.2rem 0.2rem;
-}
-
 .skills-grid {
   margin-top: 2rem;
   text-align: left;
@@ -534,7 +539,6 @@ Skillset page Styles
   display: flex;
   border-radius: var(--radius-2);
   padding: 1rem;
-  cursor: pointer;
   transition: var(--transition-2);
 }
 
