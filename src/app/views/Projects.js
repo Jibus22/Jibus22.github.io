@@ -7,17 +7,8 @@ export default class extends AbstractView {
     this.setTitle("Projects");
   }
 
-  async render(id) {
-    let displayButtons = filterButtons.map((item) => {
-      return `
-        <button class="filter-btn" data-id=${item.category}>
-          <p><span class=${item.icon}></span> ${item.text}</p>
-        </button>
-      `;
-    });
-    displayButtons = displayButtons.join("");
-
-    let displayProjects = projects.map((item) => {
+  async getProjects(data) {
+    let displayProjects = data.map((item) => {
       let displayKeywords = "";
       if (item.keywords.length > 0) {
         displayKeywords = item.keywords.map((item) => {
@@ -43,7 +34,43 @@ export default class extends AbstractView {
         </div>
       `;
     });
-    displayProjects = displayProjects.join("");
+    return displayProjects.join("");
+  }
+
+  async addEvents() {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener("click", async (e) => {
+        const category = e.currentTarget.dataset.id;
+        let projectCategory;
+
+        if (category === "all") {
+          projectCategory = projects;
+        } else {
+          projectCategory = projects.filter((item) => {
+            if (item.category.includes(category)) {
+              return item;
+            }
+          });
+        }
+        document.querySelector(".projects-grid").innerHTML =
+          await this.getProjects(projectCategory);
+      });
+    });
+  }
+
+  async render(id) {
+    let displayButtons = filterButtons.map((item) => {
+      return `
+        <button class="filter-btn" data-id=${item.category}>
+          <p><span class=${item.icon}></span> ${item.text}</p>
+        </button>
+      `;
+    });
+    displayButtons = displayButtons.join("");
+
+    let displayProjects = await this.getProjects(projects);
 
     const view = `
     <div class="page-container">
@@ -62,5 +89,7 @@ export default class extends AbstractView {
     </div>
   `;
     document.querySelector(id).innerHTML = view;
+
+    this.addEvents();
   }
 }
