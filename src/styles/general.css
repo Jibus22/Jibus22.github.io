@@ -15,6 +15,8 @@ Variables
   --radius-2: 0.7rem;
   --radius-3: 0.4rem;
   --radius-4: 2rem;
+  --shadow-3: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --space-1: 1.5rem;
 }
 
 :root {
@@ -31,6 +33,7 @@ Variables
   --fg: #2d3748;
   --fg-2: #1a202c;
   --fg-3: #4a5568;
+  --fg-4: #718096;
   --border-color: #e2e8f0;
   --highlight-bg-color: #c6f6d5;
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -52,6 +55,7 @@ Variables
   --fg: #eceded;
   --fg-2: #e2e8f0;
   --fg-3: #718096;
+  --fg-4: #e2e8f0;
   --border-color: rgba(255, 255, 255, 0.16);
   --highlight-bg-color: #276749;
   --dark-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -86,6 +90,7 @@ Variables
     --fg: #eceded;
     --fg-2: #e2e8f0;
     --fg-3: #718096;
+    --fg-4: #e2e8f0;
     --border-color: rgba(255, 255, 255, 0.16);
     --highlight-bg-color: #276749;
     --dark-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -108,6 +113,7 @@ Variables
     --fg: #2d3748;
     --fg-2: #1a202c;
     --fg-3: #4a5568;
+    --fg-4: #718096;
     --border-color: #e2e8f0;
     --highlight-bg-color: #c6f6d5;
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -291,6 +297,7 @@ Homepage Styles
   max-width: 800px;
   margin-inline-start: auto;
   margin-inline-end: auto;
+  width: 85%;
 }
 
 .page-content {
@@ -392,6 +399,43 @@ Footer Styles
 
 /*
 ===============
+Shared
+===============
+*/
+
+.card-style {
+  border-width: 1px;
+  background: var(--bg-3);
+  border-style: solid;
+  border-radius: var(--radius);
+  border-color: var(--border-color);
+}
+
+.grid-style {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+}
+
+.keywords {
+  margin-top: 0.2rem;
+  margin-left: -0.4rem;
+}
+
+.keyword {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-3);
+  line-height: 1.2;
+  margin: 0.25rem 0.2rem;
+  padding: 0.2rem 0.38rem;
+  background: var(--bg-4);
+  color: var(--fg-2);
+  font-size: calc(0.65rem + 0.1vw);
+}
+
+/*
+===============
 About page Styles
 ===============
 */
@@ -415,14 +459,6 @@ About page Styles
   margin-bottom: 1.6rem;
   margin-left: 1.4rem;
   margin-right: 1.4rem;
-}
-
-.card-style {
-  border-width: 1px;
-  background: var(--bg-3);
-  border-style: solid;
-  border-radius: var(--radius);
-  border-color: var(--border-color);
 }
 
 .about-card {
@@ -453,23 +489,6 @@ About page Styles
   text-align: justify;
 }
 
-.keywords {
-  margin-top: 0.2rem;
-  margin-left: -0.4rem;
-}
-
-.keyword {
-  display: inline-flex;
-  align-items: center;
-  border-radius: var(--radius-3);
-  line-height: 1.2;
-  margin: 0.25rem 0.2rem;
-  padding: 0.2rem 0.38rem;
-  background: var(--bg-4);
-  color: var(--fg-2);
-  font-size: calc(0.65rem + 0.1vw);
-}
-
 .about-card-date {
   font-size: calc(0.7rem + 0.3vw);
 }
@@ -484,6 +503,10 @@ Skillset page Styles
   width: 80%;
   margin-inline-start: auto;
   margin-inline-end: auto;
+}
+
+.skillset > p {
+  color: var(--fg-4);
 }
 
 .skills-filters {
@@ -504,9 +527,6 @@ Skillset page Styles
 
 .skills-grid {
   margin-top: 2rem;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2, minmax(0px, 1fr));
   text-align: left;
 }
 
@@ -539,8 +559,66 @@ Skillset page Styles
 }
 
 .skill-subtitle {
+  color: var(--fg-4);
   font-size: calc(0.75rem + 0.2vw);
   font-weight: 200;
+}
+
+/*
+===============
+Project page Styles
+===============
+*/
+
+.projects {
+  text-align: left;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.projects > p {
+  color: var(--fg-4);
+}
+
+.project-filters {
+  margin: 2.5rem 1rem;
+}
+
+.project-card {
+  cursor: pointer;
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-3);
+  transition: var(--transition-2);
+  padding: var(--space-1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-thumbnail {
+  height: 210px;
+  margin: calc(var(--space-1) * -1) calc(var(--space-1) * -1) 1.1rem
+    calc(var(--space-1) * -1);
+}
+
+.project-thumbnail img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: var(--radius-3);
+  border-top-left-radius: var(--radius-3);
+}
+
+.project-prez p {
+  font-size: calc(0.7rem + 0.4vw);
+  text-align: justify;
+  color: var(--fg-3);
+}
+
+.project-keywords {
+  padding-bottom: 1rem;
 }
 
 /*
@@ -567,10 +645,12 @@ Media queries
     margin-right: 0px;
   }
 
-  .skills-grid {
+  .grid-style {
     grid-template-columns: repeat(1, minmax(0px, 1fr));
-    max-width: 300px;
-    width: 80%;
+  }
+
+  .project-card {
+    max-width: 450px;
     margin-inline-start: auto;
     margin-inline-end: auto;
   }

@@ -236,7 +236,7 @@ export const filterButtons = [
     category: "tools_&_environment",
   },
   {
-    icon: "icon-bar_chart",
+    icon: "icon-equalizer2",
     text: "Audio",
     category: "audio",
   },

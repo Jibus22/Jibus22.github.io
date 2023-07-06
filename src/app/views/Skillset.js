@@ -69,7 +69,7 @@ export default class extends AbstractView {
           <div class="skills-filters">
             ${displayButtons}
           </div>
-          <div class="skills-grid">
+          <div class="grid-style skills-grid">
             ${displaySkills}
           </div>
         </div>
