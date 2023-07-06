@@ -77,7 +77,7 @@ export const displayNavbar = () => {
           <i class="icon-menu1"></i>
         </button>
         <a class="home-logo-container navigate" href="/">
-          <img src="src/public/favicon.svg" alt="home logo" class="home-logo" />
+          <img src="/favicon.svg" alt="home logo" class="home-logo" />
         </a>
         <nav class="links">
           <ul class="nav-links">

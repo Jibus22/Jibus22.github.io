@@ -34,7 +34,7 @@ export const social = [
   {
     class: "tooltip",
     dataTooltip: "Download resume",
-    href: "src/public/JBLC_EN_RESUME.pdf",
+    href: "public/JBLC_EN_RESUME.pdf",
     target: "_blank",
     icon: "icon-file-text2",
   },
