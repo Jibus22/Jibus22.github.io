@@ -149,7 +149,7 @@ Global Styles
 
 body {
   font-family: var(--ff-primary);
-  font-size: calc(0.9rem + 0.3vw);
+  font-size: calc(1.1rem + 0.1vw);
   font-weight: 200;
   line-height: 1.5;
   color: var(--fg);
@@ -202,7 +202,7 @@ Navbar Styles
   background: transparent;
   border-color: transparent;
   cursor: pointer;
-  font-size: calc(0.9rem + 0.8vw);
+  font-size: calc(1.3rem + 0.3vw);
   color: currentColor;
   transition: var(--transition-2);
   background-color: var(--bg-2);
@@ -238,7 +238,7 @@ Navbar Styles
   background: transparent;
   border-color: transparent;
   cursor: pointer;
-  font-size: calc(1rem + 0.6vw);
+  font-size: calc(1.3rem + 0.3vw);
   color: currentColor;
   transition: var(--transition-2);
   padding: 0.35em 0.35em;
@@ -443,7 +443,7 @@ Shared
   color: var(--fg-3);
   border-color: transparent;
   font-weight: 500;
-  font-size: calc(0.7rem + 0.3vw);
+  font-size: calc(0.8rem + 0.2vw);
   margin: 0.2rem 0.2rem;
 }
 
@@ -501,7 +501,7 @@ About page Styles
 
 .about-card-prez p {
   margin-top: 0.4rem;
-  font-size: calc(0.77rem + 0.1vw);
+  font-size: calc(0.8rem + 0.05vw);
   line-height: 1.3;
   text-align: justify;
 }
@@ -550,7 +550,7 @@ Skillset page Styles
 .skill-icon {
   display: flex;
   align-items: center;
-  font-size: calc(0.9rem + 0.8vw);
+  font-size: calc(1.3rem + 0.2vw);
 }
 
 .skill-prez {
@@ -558,13 +558,13 @@ Skillset page Styles
 }
 
 .skill-title {
-  font-size: calc(0.7rem + 0.3vw);
+  font-size: calc(0.9rem + 0.1vw);
   font-weight: 600;
 }
 
 .skill-subtitle {
   color: var(--fg-4);
-  font-size: calc(0.75rem + 0.2vw);
+  font-size: calc(0.9rem + 0.1vw);
   font-weight: 200;
 }
 
@@ -616,7 +616,7 @@ Project page Styles
 }
 
 .project-prez p {
-  font-size: calc(0.7rem + 0.4vw);
+  font-size: calc(1rem + 0.1vw);
   text-align: justify;
   color: var(--fg-3);
 }
