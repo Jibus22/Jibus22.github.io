@@ -7,7 +7,6 @@ The website is reachable here: [portfolio](https://jibus22.github.io/).
 
 To run it locally, nodejs and npm must be installed, then just run `npm install` in the root directory then `npm run dev` or `npm run build` then `npm run preview`.
 
-<img src="./_resources/screenshot.png" alt="screenshot.png" width="418" height="430">
+<img src="./_resources/screenshot.png" alt="screenshot.png" width="540" height="228">
 
 _screenshot of the 'About' page_
-
