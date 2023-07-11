@@ -66,6 +66,18 @@ export const skills = [
     category: ["programming", "web"],
   },
   {
+    icon: "icon-code",
+    title: "Vitejs",
+    subtitle: "web development",
+    category: ["programming", "web"],
+  },
+  {
+    icon: "icon-code",
+    title: "Vitestjs",
+    subtitle: "web development",
+    category: ["programming", "web"],
+  },
+  {
     icon: "devicon-git-plain",
     title: "Git",
     subtitle: "development",
