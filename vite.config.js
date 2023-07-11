@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from "vite";
 
 export default defineConfig({
@@ -8,4 +9,7 @@ export default defineConfig({
     outDir: "../dist",
   },
   root: "src",
+  test: {
+    // ...
+  },
 });
