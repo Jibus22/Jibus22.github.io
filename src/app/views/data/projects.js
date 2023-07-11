@@ -120,6 +120,23 @@ export const projects = [
     category: ["all", "web", "devops"],
   },
   {
+    href: "https://jibus22.github.io/",
+    img: "https://github.com/Jibus22/Jibus22.github.io/blob/main/_resources/screenshot.png?raw=true",
+    title: "portfolio",
+    prez: "This portfolio is designed as a SPA with a front stack which is simply html, css & vanilla javascript. The goal of developing a SPA in vanilla javascript is learning how it works under the hood and finally understanding the main element which is the router. The project is developed and built with vitejs, tested with vitestjs and deployed with github actions on Github Pages.",
+    keywords: [
+      "html",
+      "css",
+      "javascript",
+      "vitejs",
+      "vitestjs",
+      "github actions",
+      "Github Pages",
+      "SPA",
+    ],
+    category: ["all", "web", "devops"],
+  },
+  {
     href: "https://github.com/Jibus22/ft_services",
     img: "/images/galaxy2.jpg",
     title: "ft_services",
