@@ -306,11 +306,15 @@ Homepage Styles
   padding-bottom: 4.5rem;
 }
 
-.page-content h1 {
-  display: inline;
+.home h1 {
+  display: inline-block;
   color: #3c5af0;
   font-weight: 800;
-  font-size: calc(2.85rem + 0.8vw);
+  font-size: calc(3.8rem + 0.8vw);
+  letter-spacing: -0.15rem;
+  background: linear-gradient(to right, #001688 16%, #3c5af0 86%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home {
