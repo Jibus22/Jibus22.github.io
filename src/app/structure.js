@@ -99,9 +99,10 @@ export const displayNavbar = () => {
 };
 
 export const displayFooter = () => {
+  const date = new Date().getFullYear();
   const footer = `
     <footer class="footer">
-      <p><span>&#169;</span> 2023 Jean-Baptiste Le Corre</p>
+      <p><span>&#169;</span> ${date} Jean-Baptiste Le Corre</p>
     </footer>
   `;
 
