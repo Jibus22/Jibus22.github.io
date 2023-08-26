@@ -42,6 +42,12 @@ export const skills = [
     category: ["programming", "web"],
   },
   {
+    icon: "devicon-sass-original",
+    title: "Sass",
+    subtitle: "web development",
+    category: ["programming", "web"],
+  },
+  {
     icon: "devicon-javascript-plain",
     title: "Javascript",
     subtitle: "web development",

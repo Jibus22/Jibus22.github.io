@@ -106,7 +106,7 @@ export const projects = [
     href: "https://github.com/Jibus22/ft_transcendence",
     img: "/images/ft_transcendance.jpg",
     title: "ft_transcendence",
-    prez: "Web application of an online pong game with leaderboard, profile dashboard, chat interface. Implemented part of back-end, all websocket system and front-end in the end. Built and deployed with docker-compose",
+    prez: "Web application of an online pong game with user authentication through OAuth 2 and the 42 API. Features like leaderboard, profile dashboard, chat interface; and of course the pong game. Implemented part of back-end, all websocket system and front-end in the end. Built and deployed with docker-compose",
     keywords: [
       "reactjs",
       "nestjs",
@@ -120,10 +120,10 @@ export const projects = [
     category: ["all", "web", "devops"],
   },
   {
-    href: "https://jibus22.github.io/",
+    href: "https://github.com/Jibus22/Jibus22.github.io",
     img: "https://github.com/Jibus22/Jibus22.github.io/blob/main/_resources/screenshot.png?raw=true",
     title: "portfolio",
-    prez: "This portfolio is designed as a SPA with a front stack which is simply html, css & vanilla javascript. The goal of developing a SPA in vanilla javascript is learning how it works under the hood and finally understanding the main element which is the router. The project is developed and built with vitejs, tested with vitestjs and deployed with github actions on Github Pages.",
+    prez: "This portfolio is designed as a responsive 'Single Page Application' with a front stack which is simply html, css & javascript. The goal of developing a SPA in vanilla javascript is learning how it works under the hood and finally understanding a main element which is the router. The project is developed and built with vitejs, tested with vitestjs and deployed with github actions on Github Pages.",
     keywords: [
       "html",
       "css",
