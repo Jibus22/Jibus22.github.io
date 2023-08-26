@@ -1,3 +1,8 @@
+<p>
+  <img align=center alt="state badge" src="https://github.com/Jibus22/Jibus22.github.io/actions/workflows/deployment.yml/badge.svg?branch=main" />
+</p>
+<br/>
+
 This portfolio is designed as a SPA and inspired by [Angelina Tsuboi](https://github.com/ANG13T).
 
 The front stack is simply html, css, vanilla javascript. The goal of developing a SPA in vanilla javascript is learning how it works under the hood and finally understanding the main element which is the router.
