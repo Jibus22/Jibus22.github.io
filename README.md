@@ -5,7 +5,7 @@
 
 This portfolio is designed as a SPA and inspired by [Angelina Tsuboi](https://github.com/ANG13T).
 
-The front stack is simply html, css, vanilla javascript. The goal of developing a SPA in vanilla javascript is learning how it works under the hood and finally understanding the main element which is the router.
+The front stack is simply html, css, javascript. The goal of developing a SPA in vanilla javascript is learning how it works under the hood and finally understanding a main element which is the router.
 
 The project is developed and built with vitejs, tested with vitestjs and deployed with github actions on Github Pages.
 The website is reachable here: [portfolio](https://jibus22.github.io/).
