@@ -1,5 +1,5 @@
 import AbstractView from "./AbstractView.js";
-import { about } from "./data/about.js";
+import { about as data_about } from "./data/about.js";
 
 export default class extends AbstractView {
   constructor(params) {
@@ -8,16 +8,20 @@ export default class extends AbstractView {
   }
 
   async render(id) {
-    let displayAbout = about.map((item) => {
-      const cards = item.cards;
-      let diplayCards = cards.map((item) => {
-        let displayKeywords = item.keywords.map((item) => {
-          return `<span class="keyword">${item}</span>`;
-        });
-        displayKeywords = displayKeywords.join("");
-
-        return `
-          <div class="card-style about-card">
+    let delay = 50;
+    let displayAbout = data_about
+      .map((item) => {
+        const cards = item.cards;
+        let diplayCards = cards
+          .map((item) => {
+            delay += 80;
+            let displayKeywords = item.keywords
+              .map((item) => {
+                return `<span class="keyword">${item}</span>`;
+              })
+              .join("");
+            return `
+          <div class="card-style about-card" style="animation-delay:${delay}ms">
             <div class="about-card-prez">
               <h4>${item.subtitle}</h4>
               <h5>${item.subsubtitle}</h5>
@@ -29,10 +33,10 @@ export default class extends AbstractView {
             </div>
           </div>
         `;
-      });
-      diplayCards = diplayCards.join("");
+          })
+          .join("");
 
-      return `
+        return `
         <div class="about-section">
           <h2><span class=${item.icon}></span>&nbsp;&nbsp;${item.title}</h2>
           <div class="about-list">
@@ -40,8 +44,8 @@ export default class extends AbstractView {
           </div>
         </div>
       `;
-    });
-    displayAbout = displayAbout.join("");
+      })
+      .join("");
 
     const view = `
     <div class="page-container">

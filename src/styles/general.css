@@ -187,6 +187,16 @@ Navbar Styles
   display: flex;
   flex-direction: column;
   z-index: 40;
+  animation: nav-load 300ms ease-in;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .nav-header {
@@ -306,6 +316,14 @@ Homepage Styles
   padding-bottom: 4.5rem;
 }
 
+.home {
+  padding-top: calc(5rem + 5vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .home h1 {
   display: inline-block;
   color: #3c5af0;
@@ -315,26 +333,21 @@ Homepage Styles
   background: linear-gradient(to right, #001688 16%, #3c5af0 86%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.home {
-  padding-top: calc(5rem + 5vh);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  animation: my-scale 300ms ease-in;
 }
 
 .prez {
   margin: 0.4em;
   width: 80%;
   font-size: calc(0.9rem + 0.6vw);
+  animation: translate-to-right 300ms ease-in;
 }
 
 .social {
   display: flex;
   font-size: calc(1.5rem + 0.6vw);
   margin-top: 1em;
+  animation: translate-to-right 300ms ease-in;
 }
 
 .social a {
@@ -473,6 +486,10 @@ About page Styles
   z-index: -1;
 }
 
+.about-section h2 {
+  animation: translate-to-right 250ms ease-in;
+}
+
 .about-list {
   display: flex;
   flex-direction: column;
@@ -486,6 +503,8 @@ About page Styles
   display: flex;
   padding: 1em;
   margin-bottom: 1em;
+  opacity: 0;
+  animation: 0.5s ease-out 0.2s fade forwards, 0.5s ease-out 0.2s thescale;
   transition: var(--transition-2);
 }
 
@@ -505,7 +524,7 @@ About page Styles
 
 .about-card-prez p {
   margin-top: 0.4rem;
-  font-size: calc(0.8rem + 0.05vw);
+  font-size: calc(0.9rem + 0.05vw);
   line-height: 1.3;
   text-align: justify;
 }
@@ -526,11 +545,17 @@ Skillset page Styles
   margin-inline-end: auto;
 }
 
+.skillset > h2 {
+  animation: translate-to-bottom 320ms ease-in;
+}
+
 .skillset > p {
+  animation: my-scale 320ms ease-in;
   color: var(--fg-4);
 }
 
 .skills-filters {
+  animation: translate-to-left 320ms ease-in;
   margin: 2.5rem 1rem;
 }
 
@@ -543,6 +568,8 @@ Skillset page Styles
   display: flex;
   border-radius: var(--radius-2);
   padding: 1rem;
+  opacity: 0;
+  animation: 0.2s ease-out fade forwards, 0.2s ease-out move;
   transition: var(--transition-2);
 }
 
@@ -584,12 +611,22 @@ Project page Styles
   margin-inline-end: auto;
 }
 
+.projects-grid {
+  animation: translate-to-right 200ms ease-in;
+}
+
+.projects > h2 {
+  animation: my-scale 200ms ease-in;
+}
+
 .projects > p {
+  animation: my-scale 200ms ease-in;
   color: var(--fg-4);
 }
 
 .project-filters {
   margin: 2.5rem 1rem;
+  animation: translate-to-left 300ms ease-in;
 }
 
 .project-card {
@@ -673,5 +710,65 @@ Media queries
 @media screen and (max-height: 500px) {
   .home {
     padding-top: calc(0.2rem + 0.2vh);
+  }
+}
+
+@keyframes my-scale {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes translate-to-left {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes translate-to-right {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes translate-to-bottom {
+  0% {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateY(-40%);
+  }
+}
+@keyframes thescale {
+  0% {
+    transform: scale(0.8);
   }
 }

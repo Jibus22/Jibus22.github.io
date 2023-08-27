@@ -7,10 +7,14 @@ export default class extends AbstractView {
     this.setTitle("Skills");
   }
 
-  async getSkills(data) {
+  async getSkills(data, isAnimation) {
+    let i = 0;
+    let delay = 0;
     let displaySkills = data.map((item) => {
-      return `
-        <div class="card-style skill-card">
+      let skill = `
+        <div class="card-style skill-card" style="animation-delay: ${delay}ms;${
+        isAnimation ? "" : "animation:none;opacity:1;"
+      }">
           <div class="skill-icon">
             <span class=${item.icon}></span>
           </div>
@@ -20,7 +24,11 @@ export default class extends AbstractView {
           </div>
         </div>
       `;
+      delay += i % 2 == 0 ? 0 : 100;
+      i++;
+      return skill;
     });
+    console.log(i);
     return displaySkills.join("");
   }
 
@@ -42,7 +50,8 @@ export default class extends AbstractView {
           });
         }
         document.querySelector(".skills-grid").innerHTML = await this.getSkills(
-          skillCategory
+          skillCategory,
+          false
         );
       });
     });
@@ -58,7 +67,7 @@ export default class extends AbstractView {
     });
     displayButtons = displayButtons.join("");
 
-    let displaySkills = await this.getSkills(skills);
+    let displaySkills = await this.getSkills(skills, true);
 
     const view = `
     <div class="page-container">

@@ -17,7 +17,7 @@ export const about = [
           "Devops",
           "Algorithmic",
         ],
-        prez: "42 teaches code through projects. The student is autonomous and can only rely on documentation and peers to succeed. This process leads us to learn about computer architecture and memory, many programming languages and their paradigms, data structures and algorithms, design patterns, multi-threading, web architecture, etc. The student's course ends with one or more internships or a work-study program.",
+        prez: "42 teaches code through projects. The student is autonomous and can only rely on documentation and peers to succeed. This process leads us to learn about computer architecture and memory, many programming languages and their paradigms, data structures and algorithms, design patterns, multi-threading, web architecture, etc. Overall, we learn to learn. The student's course ends with one or more internships or a work-study program.",
       },
       {
         date: "2012 - 2014",
