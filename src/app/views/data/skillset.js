@@ -54,8 +54,20 @@ export const skills = [
     category: ["programming", "web"],
   },
   {
+    icon: "devicon-typescript-plain",
+    title: "Typescript",
+    subtitle: "web development",
+    category: ["programming", "web"],
+  },
+  {
     icon: "devicon-nodejs-plain",
     title: "Node.js",
+    subtitle: "web development",
+    category: ["programming", "web"],
+  },
+  {
+    icon: "devicon-express-original",
+    title: "Express",
     subtitle: "web development",
     category: ["programming", "web"],
   },

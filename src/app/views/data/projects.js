@@ -1,5 +1,23 @@
 export const projects = [
   {
+    href: "https://github.com/Jibus22/camagru",
+    img: "https://user-images.githubusercontent.com/59167486/272291927-2db07d3d-fd23-4544-ba17-92334c29e8de.jpg",
+    title: "camagru",
+    prez: "Full-Stack Instagram-like application made as a SPA. Front-end: vanilla javascript, html, sass. Back-end vanilla nodejs, postgresql. No typeORM. Front end developed and built with vitejs. Static version deployed on github pages with github actions. Checkout <a href='https://github.com/Jibus22/camagru#readme' target='blank'>README</a> to see all features.",
+    keywords: [
+      "javascript",
+      "nodejs",
+      "docker-compose",
+      "vitejs",
+      "html",
+      "sass",
+      "github actions",
+      "Github Pages",
+      "SPA",
+    ],
+    category: ["all", "web", "devops"],
+  },
+  {
     href: "https://github.com/Jibus22/bootcamp_embedded",
     img: "https://github.com/Jibus22/bootcamp_embedded/blob/main/_resources/42chips_devboard.jpeg?raw=true",
     title: "Bootcamp embedded development",
