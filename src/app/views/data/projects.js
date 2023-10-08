@@ -3,7 +3,7 @@ export const projects = [
     href: "https://github.com/Jibus22/camagru",
     img: "https://user-images.githubusercontent.com/59167486/272291927-2db07d3d-fd23-4544-ba17-92334c29e8de.jpg",
     title: "camagru",
-    prez: "Full-Stack Instagram-like application made as a SPA. Front-end: vanilla javascript, html, sass. Back-end vanilla nodejs, postgresql. No ORM. Front end developed and built with vitejs. Static version deployed on github pages with github actions. I built my own backend framework with routing and middleware managment express-like, to achieve this project. Checkout <a href='https://github.com/Jibus22/camagru#readme' target='blank'>README</a> to see all features.",
+    prez: "Instagram-like application. Front-end: vanilla javascript, html, sass, made as a SPA. Back-end: vanilla nodejs, postgresql, made as a REST API. No ORM. Front end developed and built with vitejs. Static version deployed on github pages with github actions. I built my own backend framework with routing and middleware managment express-like, to achieve this project. Checkout repo's README to see all features and demos.",
     keywords: [
       "javascript",
       "nodejs",
