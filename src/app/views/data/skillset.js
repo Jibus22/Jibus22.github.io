@@ -84,6 +84,12 @@ export const skills = [
     category: ["programming", "web"],
   },
   {
+    icon: "devicon-redux-original",
+    title: "RTK Query",
+    subtitle: "web development",
+    category: ["programming", "web"],
+  },
+  {
     icon: "icon-code",
     title: "Vitejs",
     subtitle: "web development",
@@ -132,10 +138,34 @@ export const skills = [
     category: ["programming", "web", "datascience"],
   },
   {
+    icon: "devicon-mongodb-plain",
+    title: "Mongoose",
+    subtitle: "development",
+    category: ["programming", "web", "datascience"],
+  },
+  {
     icon: "devicon-postgresql-plain",
     title: "Postgresql",
     subtitle: "development",
     category: ["programming", "web", "datascience"],
+  },
+  {
+    icon: "icon-pencil",
+    title: "Chakra",
+    subtitle: "UI components library",
+    category: ["programming", "web"],
+  },
+  {
+    icon: "icon-pencil",
+    title: "Styled Components",
+    subtitle: "CSS library",
+    category: ["programming", "web"],
+  },
+  {
+    icon: "icon-pencil",
+    title: "Tailwindcss",
+    subtitle: "CSS library",
+    category: ["programming", "web"],
   },
   {
     icon: "icon-wrench",
@@ -148,6 +178,18 @@ export const skills = [
     title: "Make",
     subtitle: "development",
     category: ["programming", "tools_&_environment"],
+  },
+  {
+    icon: "devicon-google-plain",
+    title: "GCP",
+    subtitle: "devops",
+    category: ["programming", "devops"],
+  },
+  {
+    icon: "devicon-github-plain",
+    title: "Github Actions",
+    subtitle: "devops",
+    category: ["programming", "devops"],
   },
   {
     icon: "devicon-bash-plain",

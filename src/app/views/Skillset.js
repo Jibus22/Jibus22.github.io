@@ -8,9 +8,8 @@ export default class extends AbstractView {
   }
 
   async getSkills(data, isAnimation) {
-    let i = 0;
     let delay = 0;
-    let displaySkills = data.map((item) => {
+    let displaySkills = data.map((item, idx) => {
       let skill = `
         <div class="card-style skill-card" style="animation-delay: ${delay}ms;${
         isAnimation ? "" : "animation:none;opacity:1;"
@@ -24,11 +23,9 @@ export default class extends AbstractView {
           </div>
         </div>
       `;
-      delay += i % 2 == 0 ? 0 : 100;
-      i++;
+      delay += idx % 2 == 0 ? 0 : 100;
       return skill;
     });
-    console.log(i);
     return displaySkills.join("");
   }
 

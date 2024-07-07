@@ -40,6 +40,19 @@ export const about = [
     icon: "icon-briefcase",
     cards: [
       {
+        date: "jan 2024 - july 2024",
+        subtitle: "Fullstack developer",
+        subsubtitle: "Qeeps",
+        keywords: [
+          "database model design",
+          "micro-services",
+          "devops & fullstack",
+          "optimization",
+          "full ownership",
+        ],
+        prez: "Designed and implemented a notifications micro-service from scratch (database model, back, front, cloud architecture) with express/typescript. Backend communication throught GCP pubsub and SSE for front-back realtime communication. Implemented notifications front-end logic and UI, with infinite scrolling.<br>Implemented Cypress component testing from scratch and configured CI for automated testing. Upgraded all applications and their dependencies.<br>Improved cloud functions by making them lighter. Improved Docker image building and front-end image security using multi-stage build to have the application served by nginx. Halving the loading time of front-end application by implementing lazy loading. Division of response time of a route by 35 using mongodb aggregation. Improving cache usage and rtkquery api, optimistic updates.",
+      },
+      {
         date: "2014 - 2022",
         subtitle: "Sound engineer",
         subsubtitle: "Self-employed and Freelance",
