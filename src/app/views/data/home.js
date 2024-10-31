@@ -2,7 +2,7 @@ export const name = "Jean-Baptiste&#32;Le&nbsp;Corre";
 export const prez = [
   {
     content:
-      "I am a <strong>software developer, sound operator</strong>, studying computer science at 42 school.",
+      "I am a <strong>software developer, former sound operator</strong>, studying computer science at 42 school.",
   },
   {
     content:

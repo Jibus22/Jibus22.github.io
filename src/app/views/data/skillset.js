@@ -1,5 +1,11 @@
 export const skills = [
   {
+    icon: "devicon-ocaml-plain",
+    title: "Ocaml",
+    subtitle: "programming",
+    category: ["programming", "system"],
+  },
+  {
     icon: "devicon-c-plain",
     title: "C",
     subtitle: "programming",
