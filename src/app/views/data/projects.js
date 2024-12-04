@@ -10,7 +10,7 @@ export const projects = [
       "automata theory",
       "Monad design pattern",
     ],
-    category: ["all", "system", "devops"],
+    category: ["all"],
   },
   {
     href: "https://github.com/Jibus22/ft_turing",
@@ -18,7 +18,7 @@ export const projects = [
     title: "ft_turing",
     prez: "Implementation of a Turing machine in ocaml. This program takes a json formated turing machine description and an input which is the inital tape to be read by the turing machine. The turing machine will then run by applying its machine description, that is the json defined transitions to the tape.",
     keywords: ["ocaml", "functional programming", "Theory of computation"],
-    category: ["all", "system", "devops"],
+    category: ["all"],
   },
   {
     href: "https://github.com/Jibus22/camagru",
