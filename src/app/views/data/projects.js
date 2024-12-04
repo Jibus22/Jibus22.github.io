@@ -1,7 +1,7 @@
 export const projects = [
   {
     href: "https://github.com/Jibus22/ft_ality",
-    img: "https://private-user-images.githubusercontent.com/59167486/381765577-d3bdf0db-7b20-4b3b-bc37-a50843343328.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzE1NDQzMDAsIm5iZiI6MTczMTU0NDAwMCwicGF0aCI6Ii81OTE2NzQ4Ni8zODE3NjU1NzctZDNiZGYwZGItN2IyMC00YjNiLWJjMzctYTUwODQzMzQzMzI4LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDExMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMTE0VDAwMjY0MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk4OTA4ZWFkMzNmODYyODA5YTE0NmNjYTU2YzljODNiZTE1NDU2OGNjYjU0YWYzNjE3YzQ3NjEzNWE4NDA4MDgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.msct-Z5TjY0D-D-US-_2pDy9akPkdVFiaonzxBqmQPw",
+    img: "https://github.com/user-attachments/assets/e82108d5-6d78-434c-b5f3-35d1659cd975",
     title: "ft_ality",
     prez: "This program is a reproduction of the training mode of a fighting game. A grammar file composed of keymapping and combos must be given as input and then the user can trigger certain combos by pressing the appropriate keys.",
     keywords: [
@@ -14,7 +14,7 @@ export const projects = [
   },
   {
     href: "https://github.com/Jibus22/ft_turing",
-    img: "https://private-user-images.githubusercontent.com/59167486/381784247-899d6054-693c-42fa-994b-1311693f0277.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzE1NDQyNTUsIm5iZiI6MTczMTU0Mzk1NSwicGF0aCI6Ii81OTE2NzQ4Ni8zODE3ODQyNDctODk5ZDYwNTQtNjkzYy00MmZhLTk5NGItMTMxMTY5M2YwMjc3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDExMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMTE0VDAwMjU1NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkwMDAxZGQwYjhjZWY2MDY2NWJjMzlmZGQ1ZDBhNDQyNTlmZjg5OTdkMzVlODExNDhiMDg1NGM4YjY5NzdkZjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.XNuhRorB61w4dvk0KHAMa9i7r5rk3VuAuiiwqE8sW4U",
+    img: "https://github.com/user-attachments/assets/38376557-a721-49e6-a44d-13cecd7aa395",
     title: "ft_turing",
     prez: "Implementation of a Turing machine in ocaml. This program takes a json formated turing machine description and an input which is the inital tape to be read by the turing machine. The turing machine will then run by applying its machine description, that is the json defined transitions to the tape.",
     keywords: ["ocaml", "functional programming", "Theory of computation"],
