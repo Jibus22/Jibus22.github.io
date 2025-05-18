@@ -1,5 +1,45 @@
 export const about = [
   {
+    title: "Career",
+    icon: "icon-briefcase",
+    cards: [
+      {
+        date: "jan 2025 - july 2025",
+        subtitle: "Fullstack developer",
+        subsubtitle: "Papernest",
+        keywords: ["Observability", "automation", "full-stack", "data"],
+        prez: "Collaboration with the Head of Engineering and the architectural team on various tasks such as ETL (Airflow, BigQuery) on data of GitHub, Jira or Slack type for observability, the creation of automation script, the implementation of endpoints on the API and various back-end tasks as well as some front-end tasks.",
+      },
+      {
+        date: "jan 2024 - july 2024",
+        subtitle: "Fullstack developer",
+        subsubtitle: "Qeeps",
+        keywords: [
+          "database model design",
+          "micro-services",
+          "devops & fullstack",
+          "optimization",
+          "full ownership",
+        ],
+        prez: "Designed and implemented a notifications micro-service from scratch (database model, back, front, cloud architecture) with express/typescript. Backend communication throught GCP pubsub and SSE for front-back realtime communication. Implemented notifications front-end logic and UI, with infinite scrolling.<br>Implemented Cypress component testing from scratch and configured CI for automated testing. Upgraded all applications and their dependencies.<br>Improved cloud functions by making them lighter. Improved Docker image building and front-end image security using multi-stage build to have the application served by nginx. Halving the loading time of front-end application by implementing lazy loading. Division of response time of a route by 35 using mongodb aggregation. Improving cache usage and rtkquery api, optimistic updates.",
+      },
+      {
+        date: "2014 - 2022",
+        subtitle: "Sound engineer",
+        subsubtitle: "Self-employed and Freelance",
+        keywords: ["Live mixing", "Live broadcasting"],
+        prez: "Productions for small filming companies. Volunteer in documentary filming (Mongolia, Kyrgyzstan) and live music recording and mixing.",
+      },
+      {
+        date: "2014 - 2019",
+        subtitle: "Audio technician",
+        subsubtitle: "AMP Visual TV",
+        keywords: ["Worldwide TV production"],
+        prez: "Salaried in this french leader company in tv filming. Installation of microphones, intercom systems, audio and wireless equipments. I worked on notable events like: UCI Road World Championships, Africa Cup of Nations, FIFA World Cup, African Games.",
+      },
+    ],
+  },
+  {
     title: "Education",
     icon: "icon-graduation-cap",
     cards: [
@@ -32,39 +72,6 @@ export const about = [
           "Post-production",
         ],
         prez: "Equipment theory and methodology classes teaches how a microphone, a speaker, a magnetic recorder, a tv screen, a hard drive, signal transmission, signal encoding, network norms (…) works. Practice courses are focused to make students practise tools and technologies with some homeworks and projects. Usage of audio device to work on stage or in post-production: sound-device mixers, yamaha 02R96 - protools, digidesign C24 (…).",
-      },
-    ],
-  },
-  {
-    title: "Career",
-    icon: "icon-briefcase",
-    cards: [
-      {
-        date: "jan 2024 - july 2024",
-        subtitle: "Fullstack developer",
-        subsubtitle: "Qeeps",
-        keywords: [
-          "database model design",
-          "micro-services",
-          "devops & fullstack",
-          "optimization",
-          "full ownership",
-        ],
-        prez: "Designed and implemented a notifications micro-service from scratch (database model, back, front, cloud architecture) with express/typescript. Backend communication throught GCP pubsub and SSE for front-back realtime communication. Implemented notifications front-end logic and UI, with infinite scrolling.<br>Implemented Cypress component testing from scratch and configured CI for automated testing. Upgraded all applications and their dependencies.<br>Improved cloud functions by making them lighter. Improved Docker image building and front-end image security using multi-stage build to have the application served by nginx. Halving the loading time of front-end application by implementing lazy loading. Division of response time of a route by 35 using mongodb aggregation. Improving cache usage and rtkquery api, optimistic updates.",
-      },
-      {
-        date: "2014 - 2022",
-        subtitle: "Sound engineer",
-        subsubtitle: "Self-employed and Freelance",
-        keywords: ["Live mixing", "Live broadcasting"],
-        prez: "Productions for small filming companies. Volunteer in documentary filming (Mongolia, Kyrgyzstan) and live music recording and mixing.",
-      },
-      {
-        date: "2014 - 2019",
-        subtitle: "Audio technician",
-        subsubtitle: "AMP Visual TV",
-        keywords: ["Worldwide TV production"],
-        prez: "Salaried in this french leader company in tv filming. Installation of microphones, intercom systems, audio and wireless equipments. I worked on notable events like: UCI Road World Championships, Africa Cup of Nations, FIFA World Cup, African Games.",
       },
     ],
   },
